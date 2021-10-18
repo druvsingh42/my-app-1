@@ -2,9 +2,11 @@ node{
 
   stage('SCM Checkout')
   {
+     
      git 'https://github.com/druvsingh42/my-app-1'
      echo 'checkout1234567890'
-     sh 'mvn clean'
+     df mvnPath = tool name: 'maven3', type: 'maven'
+    sh "${mvnPath}"/bin/mvn clean"
     
   }
   
@@ -13,7 +15,7 @@ node{
     
     
    echo 'compile1234567890'
-   echo 'mvn package' 
+   sh "${mvnPath}"/bin/mvn install"
     
   }
 
