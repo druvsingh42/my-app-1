@@ -10,7 +10,7 @@ node{
     stage('Compile Package')
   {
     
-   mail bcc: '', body: 'Test ewmial ', cc: '', from: '', replyTo: '', subject: 'Hi Testing', to: 'druvsingh42@gmail.com' 
+    
    echo 'compile1234567890'
   }
 
