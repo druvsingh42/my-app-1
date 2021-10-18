@@ -3,7 +3,7 @@ node{
   stage('SCM Checkout')
   {
      git 'https://github.com/druvsingh42/my-app-1'
-     echo 'checkout'
+     echo 'checkout1234567890'
     
   }
   
@@ -11,7 +11,7 @@ node{
   {
     
    mail bcc: '', body: 'Test ewmial ', cc: '', from: '', replyTo: '', subject: 'Hi Testing', to: 'druvsingh42@gmail.com' 
-   echo 'compile'
+   echo 'compile1234567890'
   }
 
 
