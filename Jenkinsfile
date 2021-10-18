@@ -1,20 +1,16 @@
-pipeline {
-    agent any
-    stages {
-        stage('---clean---') {
-            steps {
-                echo 'clean'
-            }
-        }
-        stage('--test--') {
-            steps {
-                echo 'test'
-            }
-        }
-        stage('--package--') {
-            steps {
-               echo 'package'
-            }
-        }
-    }
+node{
+
+  stage('SCM Checkout')
+  {
+    
+     git 'https://github.com/druvsingh42/my-app-1'
+    
+  }
+  
+    stage('Compile Package')
+  {
+    sh 'mvn package'
+  }
+
+
 }
