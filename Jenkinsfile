@@ -15,7 +15,7 @@ node{
     stage('Compile Package')
   {
     
-   def mvnPath = tool name: 'maven3', type: 'maven' 
+  
    echo 'compile1234567890'
    sh "${mvnPath}/bin/mvn install"
     
